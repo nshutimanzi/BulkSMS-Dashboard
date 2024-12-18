@@ -1,0 +1,30 @@
+.pricingTableContainer {
+    padding: 2rem;
+    width: 90%;
+    
+    .buttonTitle {
+        padding-bottom: 1rem;
+    }
+
+    .table {
+        //width: 100%;
+        border-collapse: collapse;
+        
+
+
+        thead {
+            background-color: #fffbaa;
+        }
+
+        th {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 0.25px solid #b9b9b9;
+        }
+        td {
+            padding: 0.6rem;
+            text-align: left;
+            border-bottom: 0.25px solid #d3d2d2;
+        }
+    }
+}

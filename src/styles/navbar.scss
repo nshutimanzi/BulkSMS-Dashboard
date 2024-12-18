@@ -1,0 +1,56 @@
+.navbar {
+    height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+    
+.navbarMain {
+    flex: 1;
+}
+
+.logo {
+    margin-bottom: 1.5rem;
+            
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: large;
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 5rem;
+    font-weight: bold;
+
+    @mixin hover {
+        background-color: #85846e;
+        color: #fff;
+
+        .linkIcon {
+            color: #fff;
+        }
+    }
+
+    &[data-active] {
+        &,
+        &:hover {
+            box-shadow: 0.5rem;
+            background-color: #ffda1e;
+            color: #000;
+
+            .linkIcon {
+                color: #000;
+            }
+        }
+    }
+}
+
+.linkIcon {
+    color: #fff;
+    margin-right: 0.5rem;
+    width: 25px;
+    height: 25px;
+}
