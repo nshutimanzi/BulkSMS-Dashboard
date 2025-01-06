@@ -16,24 +16,24 @@ export default function SmsPricingTable() {
                 <Button variant="filled" color="rgba(0, 0, 0, 1)" size="md" radius="xl">Purchase SMS</Button>
             </Group>
             <Table className="table">
-                <thead>
-                    <tr>
-                        <th>Minimum # of SMS</th>
-                        <th>Maximum # of SMS</th>
-                        <th>Price/SMS (Taxes Includ.)</th>
-                        <th>Total Cap per Slab (Vat includ.)</th>
-                    </tr>
-                </thead>
-                <tbody>
+                <Table.Thead>
+                    <Table.Tr>
+                        <Table.Th>Minimum # of SMS</Table.Th>
+                        <Table.Th>Maximum # of SMS</Table.Th>
+                        <Table.Th>Price/SMS (Taxes Includ.)</Table.Th>
+                        <Table.Th>Total Cap per Slab (Vat includ.)</Table.Th>
+                    </Table.Tr>
+                </Table.Thead>
+                <Table.Tbody>
                     {pricingData.map((row, index) => (
-                        <tr key={index}>
-                            <td>{row.min}</td>
-                            <td>{row.max}</td>
-                            <td>{row.price}</td>
-                            <td>{row.total}</td>
-                        </tr>
+                        <Table.Tr key={index}>
+                            <Table.Td>{row.min}</Table.Td>
+                            <Table.Td>{row.max}</Table.Td>
+                            <Table.Td>{row.price}</Table.Td>
+                            <Table.Td>{row.total}</Table.Td>
+                        </Table.Tr>
                     ))}
-                </tbody>
+                </Table.Tbody>
             </Table>
         </div>
     );
